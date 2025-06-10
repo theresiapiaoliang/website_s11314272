@@ -80,7 +80,7 @@ iframe {
 /* Parallax Section */
 .parallax {
   position: relative;
-  background: url('../image/parallax-bg.jpg') center center / cover no-repeat fixed;
+  background: url('../image/oic-comel.jpg') center center / cover no-repeat fixed;
   height: 400px;
   display: flex;
   align-items: center;
