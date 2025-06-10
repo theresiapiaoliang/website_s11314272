@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #790a63;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e258f1;
+}
+
+.hero {
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.825)), /* white gradient */
+        url('../image/bali2.jpg');
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 40px;
+}
+
+.hero-button-audio {
+    background-color: transparent;
+    border: none;
+    padding: auto;
+    position: absolute;
+    left: 30px;
+    
+}
+  
+
+.intro {
+    max-width: 700px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    border: 4px solid #f9f9f9;
+    object-fit: cover;
+    margin-right: 270px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+    text-align: center;
+    margin-right: 170px;
+}
+
+#dynamic-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 170px;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    border-top: 1px solid #e4e4e4;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}

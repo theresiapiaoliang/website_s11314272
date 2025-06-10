@@ -1,0 +1,171 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #fefefe;
+  color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #003a63;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #007aff;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: 25rem;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.275);
+  padding: 1rem 40rem;
+  border-radius: 8px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.profile-text h2 {
+  font-size: 30px;
+  color: rgb(188, 3, 3);
+  text-align: center;
+}
+.profile-text p {
+  flex: 2;
+}
+
+.profile-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* --- Artworks Section --- */
+.activities {
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../image/bali2.jpg') center center / cover no-repeat fixed;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.activities::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 0;
+}
+
+.activities-overlay {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
+/* --- End Artworks Section --- */
+
+.offers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.offer-card {
+  flex: 1 1 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.rooms {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.room {
+  flex: 1 1 45%;
+}
+
+.room img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.room p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #222;
+  color: white;
+  margin-top: 2rem;
+}

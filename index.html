@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Personal Intro</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Beautiful Indonesia</div>
+            <ul class="nav-links">
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="my-indo.html">My Indonesia</a></li>
+                <li><a href="food.html">Local Dishes</a></li>
+                <li><a href="place.html">Tourist Spot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+
+        <section class="intro">
+            <img src="image/oic2.JPG" alt="Profile Picture" class="profile-pic">
+            <h1>Hi, I'm Theresia</h1>
+            <div class="hero-text">
+                <p id="dynamic-text">Welcome to my personal website.</p>
+                    <a href="profile.html">
+                        <button class="hero-button">
+                            <img src="image/profile.svg" alt="Icon" width="90" height="90">
+                        </button>
+                    </a>
+                    <button class="hero-button-audio" onclick="playAudio()">
+                            <img src="image/audio.svg" alt="audio-icon" width="60" height="60">
+                    </button>
+                    <audio id="audio" src="audio/Audio.mp3"></audio>
+                    <script>
+                        function playAudio() {
+                            const audio = document.getElementById('audio');
+                            audio.play();
+                        }
+                    </script>
+
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Theresia | Final Project</p>
+    </footer>
+</body>
+</html>
