@@ -18,12 +18,3 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(section);
   });
 });
-
-// Parallax scrolling effect
-window.addEventListener("scroll", () => {
-  const parallax = document.querySelector(".parallax");
-  if (parallax) {
-    const offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = `${offset * 0.5}px`;
-  }
-});

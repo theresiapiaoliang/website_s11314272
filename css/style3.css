@@ -34,13 +34,12 @@ body {
 .hero {
   position: relative;
   text-align: center;
+  height: 100vh; /* Full viewport height */
+  background: url('../image/bali1.jpg') center center / cover no-repeat; /* Static background image */
 }
 
 .hero-image {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none; /* Remove the separate hero image element */
 }
 
 .hero-text {
@@ -75,33 +74,6 @@ body {
 iframe {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Parallax Section */
-.parallax {
-  position: relative;
-  background: url('../image/oic-comel.jpg') center center / cover no-repeat fixed;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.parallax-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 8px;
-}
-
-.parallax h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.parallax p {
-  font-size: 1.2rem;
 }
 
 /* Fade-in Animation */
