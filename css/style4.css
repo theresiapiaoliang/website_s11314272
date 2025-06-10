@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #fefefe;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #003a63;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  color: #003a63;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007aff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  background: url('../image/bali2.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-image {
+  display: none; /* Background image is applied directly to the hero section */
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color:#f4f4f4
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #f9f9f9;
+}
+
+.hero-text .read-time {
+  font-size: 1rem;
+  color: #f9f9f9;
+  margin-top: 1rem;
+  display: block;
+}
+
+/* My Country Section */
+.my-country {
+  padding: 4rem 2rem;
+}
+
+.country-section {
+  margin-bottom: 3rem;
+}
+
+.country-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.country-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.row-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section-media1 {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.country-image, .country-image2 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Section */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text .read-time {
+    font-size: 0.9rem;
+  }
+
+  .row-layout {
+    flex-direction: column;
+  }
+
+  .country-image, .country-image2 {
+    max-width: 300px;
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
